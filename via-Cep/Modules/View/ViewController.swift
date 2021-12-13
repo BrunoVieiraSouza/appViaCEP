@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPesquisar(_ sender: UIButton) {
-        controllerView.loadAddress(cep: self.tfCEP.text ?? "78110903") { endereco in
+        controllerView.loadAddress(cep: self.tfCEP.text ?? "78110400") { endereco in
             DispatchQueue.main.async {
                 self.lbLogradouro.text = endereco.logradouro
                 self.lbNumero.text = endereco.complemento
